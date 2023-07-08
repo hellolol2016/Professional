@@ -1,0 +1,235 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Yicheng (Dennis) Wang} \\ \vspace{1pt}
+    \small 949-375-1978 $|$ \href{mailto:denniswang812@gmail.com}{\underline{denniswang812@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/denniswang812/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/hellolol2016}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Northeastern University London}{London, UK}
+      {Bachelor of Science in Computer Science + Business Administration}{Sept. 2023 -- April 2024}
+    
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+
+    \resumeSubheading
+      {Full-Stack Developer}{Oct. 2020 -- July 2023}
+      {Major League Hacking}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Led and managed cross-functional teams of up to 4 members in over 8 hackathons over 2 years}
+        \resumeItem{Provided guidance and motivation to team members, encouraging creativity and problem-solving}
+        \resumeItem{Developed full-stack applications using JavaScript libraries, such as React and NextJs, harnessing modern web technologies to create intuitive and user-friendly interfaces}
+    \resumeItemListEnd
+    
+%    \resumeSubheading
+%      {Website Developer}{June 2021 -- May 2023}
+ %     {LOT Foundation}{Orange County, CA}
+%      \resumeItemListStart
+%        \resumeItem{Designed and developed responsive and user-friendly websites for a nonprofit organization.}
+%        \resumeItem{Educated fellow high school developers on how to maintain the website and update information.}
+%        \resumeItem{Delivered visually appealing websites that communicated the organization's mission using React}
+%      \resumeItemListEnd
+    \resumeSubheading
+      {Engineer \& Research Fellow}{July 2022}
+      {University of California, Irvine}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Contributed to research in assistive technology, specifically focused on designing and developing a hands-free mouse for individuals with disabilities.}
+        \resumeItem{Awarded the Certificate of Research \& Innovation Leadership for completing the BEAM program requirements, demonstrating outstanding research, innovation, and entrepreneurship skills.}
+        \resumeItem{Leveraged programming knowledge to program an Arduino for the mouse headset}
+        \resumeItem{Used the Fusion 360 software to design a user-friendly and ergonomic device }
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+
+    \resumeSubheading
+      {Programmer \& Builder}{June 2021 --  May 2022}
+      {VEX Robotics}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Played a pivotal role as a programmer and builder for VEX team 2496R, contributing to our performance at the VEX Worlds competition.}
+        \resumeItem{Optimized an essential robot turn function to under 20 lines in an established codebase via Git}
+        \resumeItem{Volunteered at school district hosted events, leveraging robotics expertise to engage and inspire the community while giving back through knowledge sharing and mentorship}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{EquilibriNews} $|$ \emph{Nextjs, JavaScript, React, Puppeteer}}{Feb. 2022 --  March 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a website to scrape news from major publishers and displayed in a way that reduced political bias}
+            \resumeItem{Implemented Google's Puppeteer API to scrape data from news websites}
+            \resumeItem{Consulted UPenn Master's Graduate Melissa Amaya through the Polygence platform for technical advice}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{CultureCanvas} $|$ \emph{NextJs, TyoeScript, React, MaterialUI, ArticAPI}}{July 2023}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a virtual art gallery for a 36 hour hackathon, HackBytes II}
+            \resumeItem{Managed a team of 3 developers and 1 UI designer via Discord to complete the project within the short timeframe}
+            \resumeItem{Accessed the Art Institute of Chicago API to access artworks}
+            \resumeItem{Deployed the website using Vercel to achieve streamlined deployment and automated integration}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{SigmaChat} $|$ \emph{HTML, CSS, JavaScript, Firebase}}{July 2023}
+          \resumeItemListStart
+            \resumeItem{Developed SigmaChat, a web chatroom leveraging Firebase and Google OAuth for seamless user authentication and data storage}
+            \resumeItem{Utilized HTML, CSS, and JavaScript to create a user-friendly interface with dynamic content \& responsive design}
+            \resumeItem{Implemented Firebase Realtime Database to store and retrieve user-generated data, ensuring real-time updates and data synchronization.}
+            \resumeItem{Hosted SigmaChat on Vercel for efficient deployment, continuous integration, and easy scalability}
+          \resumeItemListEnd    
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, JavaScript, SQL, HTML/CSS, TypeScript} \\
+     \textbf{Frameworks}{: React, Node.js, NextJs, ChakraUI, Firebase, Material-UI, Mantine-UI} \\
+     \textbf{Developer Tools}{: Git, VS Code, Visual Studio, npm, IntelliJ, Eclipse, Vercel, Netlify} \\
+     \textbf{Libraries}{: pandas, NumPy, MATLAB, Puppeteer}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
