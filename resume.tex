@@ -73,6 +73,17 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\eduSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5}
+     
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -122,10 +133,10 @@
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
-    \resumeSubheading
+    \eduSubheading
       {Northeastern University}{Boston, MA}
       {Bachelor of Science in Computer Science + Business Administration}{Sept. 2023 -- June 2027}
-
+        {Relevant Courses: Discrete Structures - A, Fundamentals of CS 1+2 - A}
   \resumeSubHeadingListEnd
 
 
@@ -147,9 +158,8 @@
       {Engineer \& Research Fellow}{July 2022}
       {University of California, Irvine}{Irvine, CA}
       \resumeItemListStart
-        \resumeItem{Contributed to research in assistive technology, specifically focused on designing and developing a hands-free mouse for individuals with disabilities.}
         \resumeItem{Awarded the Certificate of Research \& Innovation Leadership for completing the BEAM program requirements, demonstrating outstanding research, innovation, and entrepreneurship skills.}
-        \resumeItem{Utilized programming expertise to code an Arduino board through the Arduino IDE as well as writing a MATLAB script for the mouse headset}
+        \resumeItem{Utilized programming expertise to code an Arduino board through the Arduino IDE as well as writing a MATLAB script for a hands-free mouse for individuals with disabilities.}
         \resumeItem{Used the Fusion 360 software to design a user-friendly and ergonomic device for 3D printing}
         \resumeItem{Conducted a live demonstration of the product to UCI professors and fellow research peers}
       \resumeItemListEnd
@@ -199,14 +209,14 @@
   
           \resumeItemListEnd
 
-      \resumeProjectHeading
-          {\textbf{SigmaChat} $|$ \emph{HTML, CSS, JavaScript, Firebase}}{July 2023}
+           \resumeProjectHeading
+          {\textbf{SigmaChat} $|$ \emph{HTML, CSS, JavaScript, Firebase}}{July 2021}
           \resumeItemListStart
             \resumeItem{Developed SigmaChat, a web chatroom leveraging Firebase and Google OAuth for seamless user authentication and data storage}
             \resumeItem{Utilized HTML, CSS, and JavaScript to create a user-friendly interface with dynamic content \& responsive design}
             \resumeItem{Implemented Firebase Realtime Database to store and retrieve user-generated data, ensuring real-time updates and data synchronization.}
             \resumeItem{Hosted SigmaChat on Vercel for efficient deployment, continuous integration, and easy scalability}
-          \resumeItemListEnd    
+          \resumeItemListEnd 
           
     \resumeSubHeadingListEnd
 
