@@ -1,0 +1,291 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\eduSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5}
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Yicheng (Dennis) Wang} \\ \vspace{1pt}
+    \small 949-375-1978 $|$ \href{mailto:denniswang812@gmail.com}{\underline{denniswang812@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/denniswang812/}{\underline{LinkedIn}} $|$
+    \href{https://github.com/hellolol2016}{\underline{GitHub}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \eduSubheading
+      {Northeastern University}{Boston, MA}
+      {Bachelor of Science in Computer Science + Business Administration, GPA: 3.78}{Sept. 2023 -- June 2027}
+        {Relevant Courses: Discrete Structures - A, Fundamentals of CS 1+2 - A, Financial Accounting - A}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+ \resumeSubheading
+      {Full Stack Developer}{January. 2024}
+      {Northeastern's Young Entrepreneurs}{London, UK}
+      \resumeItemListStart
+        \resumeItem{Enhanced Entrepreneur Club's Squarespace site with custom features using previous web dev skills.}
+        \resumeItem{Integrated ticketing API to streamline event management and boost user engagement.}
+        \resumeItem{Collaborated with team to resolve technical challenges, improving site performance and user experience.}
+    \resumeItemListEnd
+
+     \resumeSubheading
+      {Private Tennis Instructor}{May 2023 - Jun. 2024}
+      {Self employed}{Orange County, CA}
+      \resumeItemListStart
+        \resumeItem{Provided personalized tennis coaching to 10+ students, ages ranging from 9 - 20+, helping each achieve significant improvements in technique and performance.}
+        \resumeItem{Designed and implemented customized training programs for various age groups, focusing on skill development, physical fitness, and strategic gameplay.}
+        \resumeItem{Effectively communicated with students and parents to set goals, provide feedback, and ensure a supportive learning environment.}
+    \resumeItemListEnd
+
+     \resumeSubheading
+      {Tennis Coordinator / Coach}{Nov. 2021 - Sep. 2023}
+      {Veylix Tennis Academy}{Orange County, CA}
+      \resumeItemListStart
+        \resumeItem{Managed daily training schedules for a team of 20+ students.}
+        \resumeItem{Organized and supervised academy games, enhancing competitive experience and fostering a sense of community.}
+        \resumeItem{Coorindated Coach allocation for summer camps using Google Sheets, ensuring all sessions were properly staffed.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Engineer \& Research Fellow}{July 2022}
+      {University of California, Irvine}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Utilized C++ skills to code an Arduino board; developed a MATLAB script taking input from an IMU for a hands-free mouse for individuals with disabilities.}
+        \resumeItem{Used the Fusion 360 software to design a user-friendly and ergonomic device for 3D printing}
+        \resumeItem{Conducted a live demonstration of the product to UCI professors and fellow research peers}
+         \resumeItem{Awarded the Certificate of Research \& Innovation Leadership for completing the BEAM program requirements, demonstrating outstanding research, innovation, and entrepreneurship skills.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Programmer \& Builder}{June 2021 --  May 2022}
+      {VEX Robotics}{Irvine, CA}
+      \resumeItemListStart
+        \resumeItem{Played a pivotal role as a programmer and builder for VEX team 2496R, contributing to our performance at the VEX Worlds competition.}
+        \resumeItem{Optimized a critical robot autonomous turn function to under 20 lines in an established codebase via Git}
+        \resumeItem{Volunteered at school district hosted events, leveraging robotics expertise to engage and inspire the community while giving back through knowledge sharing and mentorship}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+   
+
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+         \resumeProjectHeading
+          {\textbf{teXnology} $|$ \emph{Berkeley AI Hackathon 2024}}{Feb. 2022 --  March 2023}
+          \resumeItemListStart
+            \resumeItem{Led team of 3 developers in the Berkeley AI Hackathon to build a fullstack web application to format speech to LaTeX}
+            \resumeItem{Integrated Groq’s chat completion model and Openleaf API to enhance user experience and accessibility}
+            \resumeItem{Presented project in front of multiple rounds of judging, in the Berkeley ASUC Student Union building.}
+          \resumeItemListEnd
+     \resumeProjectHeading
+          {\textbf{EquilibriNews} $|$ \emph{Nextjs, JavaScript, React, Puppeteer}}{Feb. 2022 --  March 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a website to scrape news from major publishers and displayed in a way that reduced political bias}
+            \resumeItem{Implemented Google's Puppeteer API to scrape data from news websites}
+            \resumeItem{Consulted UPenn Master's Graduate Melissa Amaya through the Polygence platform for technical advice}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{WanderWorks} $|$ \emph{Figma, Canva, Adobe Premiere Pro}}{May 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and prototyped an IOS application using Figma's design and wireframe tools}
+            \resumeItem{Developed a subscription-based business model and presented it to an audience of over 100 participants in Donald Bren Hall }
+            \resumeItem{Completed project along with video demo within a strict 36 hour timeline}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{ImpaKt} $|$ \emph{Figma, Tome}}{March 2024}
+          \resumeItemListStart
+            \resumeItem{Prototyped and designed a crowdfunding application for Hack The Globe 2024}
+            \resumeItem{Implemented dual investment options, allowing investors to choose between passive and active investment strategies, thereby increasing user engagement and flexibility.}
+            \resumeItem{Pitched idea to senior BCG consultants at the BCG London Office}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{IM33 - Diagnosis of Autism Spectrum Disorder} $|$ \emph{Python, Tensorflow, IBM Z Mainframe Platform}}{Oct. 2023}
+          \resumeItemListStart
+            \resumeItem{Led and managed a cross-functional team of 6 members in a 24-hour datathon}
+            \resumeItem{Developed a machine learning model that uses TensorFlow to analyze eye-tracking data from videos to predict for autism in young children}
+            \resumeItem{Achieved a score of over 60 accuracy for the model analyzing a dataset of footage of eye movements}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{Uber Data Dashboard} $|$ \emph{Python, Google Cloud Platform, BigQuery, Mage, Looker Studio}}{July 2023}
+          \resumeItemListStart
+            \resumeItem{Leveraged Python for data preprocessing, transformation, and formatting, ensuring data quality for subsequent analysis}
+            \resumeItem{Used Google Cloud Storage to host files, Google Compute Engine and Mage as data pipeline to the Cloud}
+            \resumeItem{Utilized Google BigQuery for data processing, and Google Looker Studio to create a dashboard}
+          \resumeItemListEnd
+
+           \resumeProjectHeading
+          {\textbf{CultureCanvas} $|$ \emph{NextJs, JavaScript, REST APIs, Nodejs}}{June 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a full stack Next.js application utilizing the Art Institute of Chicago API, featuring over 100,000 art pieces}
+            \resumeItem{Leverages NextJs' serverless functions to remove need to host separate server, reducing cost}
+            \resumeItem{Incorporated gamification techniques, such as quizzes for different cultures and art forms}
+
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Front-end}{: HTML/CSS, React, Nextjs, Figma, Canva, Adobe Illustrator, Tailwind CSS, Material-UI, Bootstrap} \\
+     \textbf{Back-end}{: Java, Python, Kotlin, JavaScript, TypeScript, Nodejs, Express, PostgreSQL, Firebase, MongoDB} \\
+     \textbf{Developer Tools}{: Git, VS Code, npm, Eclipse, Vercel, Netlify, Google Cloud Platform, Amazon Web Services} \\
+     \textbf{Data Science + Visualization}{: pandas, NumPy, MATLAB, Tableau, Puppeteer, streamlit, matplotlib, Mage}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
