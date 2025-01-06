@@ -1,0 +1,240 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\textwidth}{1.5in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+\usepackage[margin=0.35in]{geometry}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+\vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\eduSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5}
+     
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+\textbf{\Huge \scshape Yicheng (Dennis) Wang} \\ \vspace{1pt}
+\small Available July - December 2025 $|$ \href{mailto:denniswang812@gmail.com}{\underline{denniswang812@gmail.com}} $|$ \href{https://www.linkedin.com/in/denniswang812/}{\underline{linkedin.com/in/denniswang812}} $|$ \href{https://github.com/hellolol2016}{\underline{github.com/hellolol2016}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \eduSubheading
+      {Northeastern University - Khoury College of Computer Science}{Boston, MA}
+      {Candidate for a Bachelor of Science in Computer Science + Business Administration; GPA: 3.81} {Sep. 2023 -- May 2026}
+        {Relevant Courses: Object-Oriented Design. Programming Languages, Data Structures + Algorithms}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+
+\section{Experience}
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {Head of Developer Experience + Developer}{Sep. 2024 - Present}
+      {Sandbox}{Northeastern University, Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Performing bi-weekly PR reviews and practicing pair-programming to tackle 3 high-priority tickets per month.}
+       \resumeItem{Implementing features in degree audit website impacting 15,000+ undergraduate students' academic planning.}
+        \resumeItem{Participated in sprints and weekly stand-ups in an Agile development environment to ensure efficient project delivery.}
+
+    \resumeItemListEnd
+    
+       \resumeSubheading
+      {Developer}{Sep. 2024 - Present}
+      {Code 4 Community}{Northeastern University, Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Creating solutions for Securing Safe Food, a 501(c)(3) nonprofit empowering 30+ pantries with allergen-friendly food.}
+        \resumeItem{Engaging in weekly meetings and code reviews for an inventory and delivery management platform for pantries.}
+        \resumeItem{Developing essential backend functions, ensuring user authentication when manipulating potentially sensitive data.}
+    \resumeItemListEnd
+
+   \resumeSubheading
+      {Software Engineer}{Sep. 2024 - Present}
+      {DAILP}{NEU Digital Scholarship Group, Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Contributing to the Digital Archive of Indigenous Language Persistence (DAILP) project at Northeastern.}
+        \resumeItem{Integrated support for glossary translations of Cherokee words on web dictionary application.}
+    \resumeItemListEnd
+   \resumeSubheading
+      {Technical Mentor}{Sep. 2024 - Dec. 2024}
+      {Oasis}{Northeastern University, Boston, MA}
+      \resumeItemListStart
+        \resumeItem{Mentored 8 beginner developers in 25+ hack sessions, maintaining a 100\% developer-retention rate.}
+        \resumeItem{Guided project planning, design, and implementation with strong time-management and organizational skills.}
+        \resumeItem{Simplified web development concepts and addressed questions promptly when leading workshops for new developers.}
+    \resumeItemListEnd
+ \resumeSubheading
+      {Web Developer}{Jan. 2024 - Apr. 2024}
+      {Northeastern's Young Entrepreneurs}{London, UK}
+      \resumeItemListStart
+        \resumeItem{Increased website traffic by 50\% through SEO optimization and responsive design implementation on club website.}
+        \resumeItem{Integrated SquareSpace API for ticketing, resulted in a 30\% increase in online event registrations.}
+        \resumeItem{Collaborated with team to resolve technical challenges, improved site performance and streamlined user experience.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+
+   
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+             \resumeProjectHeading
+          {\textbf{GraduateNU} $|$ \emph{Sandbox}}{Sep. 2024 - Present}
+          \resumeItemListStart
+            \resumeItem{Developing solution for a sandbox area to allow students to experiment with placeholder courses.}
+            \resumeItem{Prioritized on debugging critical frontend errors in React and adding new features to a codebase of over 40k files.}
+            \resumeItem{Implemented a cross-project API function to fetch information about individual courses in a degree audit plan.}
+          \resumeItemListEnd
+
+       \resumeProjectHeading
+          {\textbf{T-Error} $|$ \emph{HackHarvard 2024 - Best Developer Tool}}{Oct. 2024}
+          \resumeItemListStart
+          \resumeItem{Managed team of 4 developers to create a centralized platform and database to modernize terminal error tracking.}
+            \resumeItem{Deployed Nextjs dashboard on Vercel to visualize 100+ errors from machines using custom shell wrapper in C++.}
+            \resumeItem{Exercised effective project management and responsibility division, reaching only 5 merge conflicts in 90+ commits.}
+          \resumeItemListEnd
+
+     \resumeProjectHeading
+          {\textbf{EquilibriNews} $|$ \emph{Nextjs, JavaScript, React, Playwright}}{Apr. 2022 -  Jan. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a website to scrape news from major publishers and displayed in a way that reduced political bias.}
+            \resumeItem{Implemented Google's Puppeteer API and Playwright to scrape data from news websites including New York Times, Fox News, Wall Street Journal, etc.}
+            \resumeItem{Consulted UPenn Master's Graduate Melissa Amaya through the Polygence platform for technical advice.}
+          \resumeItemListEnd
+          \resumeItemListEnd 
+          
+
+
+
+
+
+
+%----------- SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Front end}{: React, Nextjs, Figma, Canva, Adobe Illustrator, Tailwind CSS, Chakra-UI, Bootstrap} \\
+     \textbf{Back end}{: Java, Python, Kotlin, JavaScript, TypeScript, Nodejs, Express, NestJs, PostgreSQL, Firebase, MongoDB} \\
+     \textbf{Developer Tools}{: Git, Docker, npm, Eclipse, Vercel, Netlify, Google Cloud Platform, Amazon Web Services} \\
+     \textbf{Data Science + Visualization}{: pandas, NumPy, MATLAB, Tableau, Puppeteer, streamlit, matplotlib, Mage}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
